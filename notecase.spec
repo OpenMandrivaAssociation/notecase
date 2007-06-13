@@ -1,6 +1,6 @@
 %define name	notecase
 %define version 1.5.6
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	A hierarchical text notes manager
@@ -67,10 +67,14 @@ update-mime-database "%{_datadir}/mime/"
 
 %files -f %{name}.lang
 %defattr(-,root,root)
+%if %mdkver < 200800
 %doc readme.txt
+%{_datadir}/doc/%name
+%else
+%doc readme.txt docs/help.ncd
+%endif
 %{_bindir}/%name
 %{_datadir}/applications/*
-#%{_datadir}/doc/%name
 %{_datadir}/pixmaps/*
 %{_datadir}/mime/packages/*
 %{_liconsdir}/%name.png
