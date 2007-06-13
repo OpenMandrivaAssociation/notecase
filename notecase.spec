@@ -14,6 +14,7 @@ Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig ImageMagick
 BuildRequires:	gtk2-devel unix2dos
+BuildRequires:	desktop-file-utils
 Requires(post): shared-mime-info
 Requires(postun): shared-mime-info
 
