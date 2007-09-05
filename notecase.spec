@@ -41,6 +41,7 @@ desktop-file-install --vendor="" \
   --add-category="GTK" \
   --remove-key='Encoding' \
   --remove-key='Office' \
+  --remove-key='Version' \
   --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 perl -pi -e 's|.xpm|.png||g' %buildroot/%_datadir/applicaitons/*
