@@ -1,6 +1,6 @@
 %define name	notecase
-%define version 1.5.6
-%define release %mkrel 2
+%define version 1.6.6
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	A hierarchical text notes manager
@@ -39,7 +39,8 @@ rm -rf $RPM_BUILD_ROOT
 #menu
 desktop-file-install --vendor="" \
   --add-category="GTK" \
-  --add-category="X-MandrivaLinux-Office-Accessories" \
+  --remove-key='Encoding' \
+  --remove-key='Office' \
   --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 perl -pi -e 's|.xpm|.png||g' %buildroot/%_datadir/applicaitons/*
@@ -59,11 +60,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %update_menus
-update-mime-database "%{_datadir}/mime/"		
+%update_mime_databse		
 
 %postun
 %clean_menus
-update-mime-database "%{_datadir}/mime/"
+%clean_mime_database
 
 %files -f %{name}.lang
 %defattr(-,root,root)
@@ -80,4 +81,3 @@ update-mime-database "%{_datadir}/mime/"
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
-
