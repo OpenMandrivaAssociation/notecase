@@ -11,7 +11,6 @@ Source:		%{name}-%{version}_src.tar.bz2
 URL:		http://notecase.sourceforge.net/
 License:	GPL
 Group:		Office
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig ImageMagick
 BuildRequires:	gtk2-devel libgnome-vfs2-devel
 BuildRequires:	desktop-file-utils
