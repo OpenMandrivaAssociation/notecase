@@ -1,5 +1,5 @@
 %define name	notecase
-%define version 1.6.6
+%define version 1.7.6
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -7,7 +7,7 @@ Summary: 	A hierarchical text notes manager
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		%{name}-%{version}_src.tar.bz2
+Source:		%{name}-%{version}_src.tar.gz
 URL:		http://notecase.sourceforge.net/
 License:	GPL
 Group:		Office
@@ -61,11 +61,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %update_menus
-%update_mime_databse		
+%{?update_mime_databse}
 
 %postun
 %clean_menus
-%clean_mime_database
+%{?clean_mime_database}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
