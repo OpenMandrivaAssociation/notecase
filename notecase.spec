@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source:		http://kent.dl.sourceforge.net/sourceforge/notecase/%{name}-%{version}_src.tar.gz
 URL:		http://notecase.sourceforge.net/
-License:	GPLv2+
+License:	BSD
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig ImageMagick
