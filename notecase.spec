@@ -1,5 +1,5 @@
 %define name	notecase
-%define version 1.7.9
+%define version 1.9.1
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -7,9 +7,9 @@ Summary: 	A hierarchical text notes manager
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		%{name}-%{version}_src.tar.gz
+Source:		http://kent.dl.sourceforge.net/sourceforge/notecase/%{name}-%{version}_src.tar.gz
 URL:		http://notecase.sourceforge.net/
-License:	GPL
+License:	GPLv2+
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig ImageMagick
