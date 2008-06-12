@@ -61,11 +61,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %update_menus
-%{?update_mime_databse}
+%update_mime_database
 
 %postun
 %clean_menus
-%{?clean_mime_database}
+%clean_mime_database
 
 %files -f %{name}.lang
 %defattr(-,root,root)
