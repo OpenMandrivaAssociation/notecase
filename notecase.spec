@@ -1,5 +1,5 @@
 %define name	notecase
-%define version 1.9.1
+%define version 1.9.3
 %define release %mkrel 1
 
 Name: 	 	%{name}
