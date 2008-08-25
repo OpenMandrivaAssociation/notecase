@@ -1,5 +1,5 @@
 %define name	notecase
-%define version 1.9.3
+%define version 1.9.5
 %define release %mkrel 1
 
 Name: 	 	%{name}
@@ -34,7 +34,7 @@ one.
 										
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 
 #menu
 desktop-file-install --vendor="" \
@@ -43,8 +43,6 @@ desktop-file-install --vendor="" \
   --remove-key='Office' \
   --remove-key='Version' \
   --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
-
-perl -pi -e 's|.xpm|.png||g' %buildroot/%_datadir/applicaitons/*
 
 #icons
 mkdir -p $RPM_BUILD_ROOT/%_liconsdir
