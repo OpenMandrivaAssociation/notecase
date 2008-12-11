@@ -12,7 +12,7 @@ URL:		http://notecase.sourceforge.net/
 License:	BSD
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	pkgconfig ImageMagick
+BuildRequires:	pkgconfig imagemagick
 BuildRequires:	gtk2-devel libgnome-vfs2-devel
 BuildRequires:	desktop-file-utils gtksourceview-devel
 Requires(post): shared-mime-info
