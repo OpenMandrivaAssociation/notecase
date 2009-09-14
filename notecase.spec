@@ -1,6 +1,6 @@
 %define name	notecase
 %define version 1.9.8
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	A hierarchical text notes manager
