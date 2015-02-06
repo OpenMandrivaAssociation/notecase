@@ -3,7 +3,7 @@
 Name: 	 	notecase
 Summary: 	A hierarchical text notes manager
 Version: 	1.9.8
-Release: 	4
+Release: 	5
 
 Source:		http://kent.dl.sourceforge.net/sourceforge/notecase/%{name}-%{version}_src.tar.gz
 URL:		http://notecase.sourceforge.net/
