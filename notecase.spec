@@ -6,7 +6,7 @@ Version: 	1.9.8
 Release: 	5
 
 Source:		http://kent.dl.sourceforge.net/sourceforge/notecase/%{name}-%{version}_src.tar.gz
-URL:		http://notecase.sourceforge.net/
+URL:		https://notecase.sourceforge.net/
 License:	BSD
 Group:		Office
 BuildRequires:	pkgconfig
