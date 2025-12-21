@@ -9,6 +9,7 @@ Source:		http://kent.dl.sourceforge.net/sourceforge/notecase/%{name}-%{version}_
 URL:		https://notecase.sourceforge.net/
 License:	BSD
 Group:		Office
+BuildRequires:	make
 BuildRequires:	pkgconfig
 BuildRequires:	imagemagick
 BuildRequires:	gtk2-devel
